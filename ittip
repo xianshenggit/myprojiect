@@ -1,0 +1,8 @@
+  */
+    @Override
+    public Dto deleteComment(String imgName, HttpServletRequest request) throws Exception {
+        if (!validationToken.validationLoginInfo(request)){
+            return DtoUtil.returnFail("token失效，请重新登录","100000");
+        }
+
+        return null;
